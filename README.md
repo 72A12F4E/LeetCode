@@ -2,11 +2,14 @@
 
 My solutions to [LeetCode](https://leetcode.com/) problems. Mostly doing these for fun and mental exercise.
 
-## Organization
+## Repo Organization
 
-You'll find the problem solutions in the following format.
+You can find problem solutions in the following File/Folder structure.
 
-* XXX-ZZZZZ
-* X = Problem Number
-* Z = Problem Title
+* Folder Name `XXX-ZZZZZ`
+    * X = Problem Number
+    * Z = Problem Title
+* File name
+    * Solution.{ext}
+
 

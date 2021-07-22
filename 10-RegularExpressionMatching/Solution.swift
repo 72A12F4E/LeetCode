@@ -36,7 +36,6 @@ class Solution {
     }
     
     func isMatch(_ string: String, _ pattern: [Token]) -> Bool {
-        print("Debug: \(string) \(pattern)")
         if let token = pattern.first {
             return token.extractMatches(string).contains { match in
                 guard let match = match else { return false }

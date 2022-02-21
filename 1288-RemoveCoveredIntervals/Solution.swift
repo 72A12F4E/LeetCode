@@ -7,11 +7,15 @@
 class Solution {
     func removeCoveredIntervals(_ intervals: [[Int]]) -> Int {
         /// Sort the list to ensure that adjacent intervals will be compared
-        /// with eachother.
+        /// with eachother. Make sure the wider interval gets precedence by
+        /// comparing the 'right' values.
         var intervals: [[Int]?] = intervals.sorted { lhs, rhs in
-            /// NOTE: I feel like this needs to also sort on the "right" side
-            /// of the interval. Maybe not?
-            lhs[0] <= rhs[0]
+            if lhs[0] < rhs[0] {
+                return true
+            } else if lhs[0] == rhs[0] {
+                return lhs[1] > rhs[0]
+            }
+            return false
         }
         
         /// For each interval in the list, compare and see if of the

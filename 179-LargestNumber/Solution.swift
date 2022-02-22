@@ -3,7 +3,7 @@ class Solution {
         let seq = nums.sorted { left, right in
             let l = String(left)
             let r = String(right)
-            return Int(l + r)! > Int(r + l)!
+            return l + r > r + l
         }
         .map(String.init)
         .joined()
@@ -15,4 +15,3 @@ class Solution {
         return seq.isEmpty ? "0" : String(seq)
     }
 }
-

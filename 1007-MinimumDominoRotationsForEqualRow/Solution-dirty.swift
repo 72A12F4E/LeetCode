@@ -10,7 +10,7 @@
 /// If it cannot be done, return -1.
 
 /// I implemented this one blind, and I feel like it is not efficient
-/// and I could do a lot better. The frequency map feels kinda expensive,
+/// and I could do a lot better. The frequency map feels expensive,
 /// and I could build the `zip`'d ' data structure a lot sooner. I'm gonna
 /// spend some time trying to optimize this.
 

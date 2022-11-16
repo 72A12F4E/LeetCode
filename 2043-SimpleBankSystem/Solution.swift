@@ -1,5 +1,5 @@
-// I initially had something a bit more complex with some helper methods, but it 
-// exceeded runtime for the grader.
+// I initially had something a bit more complex with 
+// some helper methods but it exceeded runtime checks
 
 class Bank {
 

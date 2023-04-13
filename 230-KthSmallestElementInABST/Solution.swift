@@ -18,7 +18,6 @@ extension TreeNode {
         visitor: (TreeNode) -> Void,
         cancel: () -> Bool
     ) {
-        if cancel() { return }
         left?.traverseInOrder(visitor: visitor, cancel: cancel)
         if cancel() { return }
         visitor(self)
